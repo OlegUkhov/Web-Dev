@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Facebook</title>
+    <style>
+        body {
+            background-color: #f3f4f7;
+            font-family: arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10%;
+            margin-left: 10%;
+        }
+        #content {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+        #left {
+            flex: 1;
+            max-width: 560px;
+        }
+        #left p {
+            font-size: 20px;
+        }
+        #logo {
+            color: #0967ff;
+            font-size: 50px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        #right {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 14px;
+            width: 360px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.5);
+            text-align: center;
+        }
+        input {
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 10px;
+            font-size: 16px;
+            border: 1px solid #dddddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        #login-button {
+            background-color: #0967ff;
+            width: 100%;
+            font-family: arial, sans-serif;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 16px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        #forgot-password {
+            display: block;
+            margin: 16px auto;
+            color: #0967ff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 12px;
+        }
+        #paragraph a {
+            text-decoration: none;
+        }
+        #paragraph a:visited {
+            color: black;
+        }
+        #createacc {
+            background-color: #43b72a;
+            width: 70%;
+            color: white;
+            padding: 16px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        hr {
+            margin: 16px auto;
+            border: 1px solid #dddddd;
+        }
+        #with_p {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 360px;
+        }
+        #with_p p {
+            font-size: 16px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div id="left">
+            <h1 id="logo">
+                facebook
+            </h1>
+            <p>Facebook помогает вам всегда оставаться
+            на связи и общаться со своими знакомыми</p>
+        </div>
+        <div id="with_p">
+            <div id="right">
+                <form id="login">
+                    <input type="text"
+                   placeholder="Электронный адрес или номер телефона">
+                    <input type="password" placeholder="Пароль">
+                    <button type="submit" id="login-button">Вход</button>
+                    <a href="#" id="forgot-password">Забыли пароль?</a>
+                    <hr>
+                    <button type="button" id="createacc">Создать новый аккаунт</button>
+                </form>
+            </div>
+            <p id="paragraph"><a href="#"><strong>Создать страницу</strong></a> знаменитости, музыкальной группы или компании</p>
+        </div>
+    </div>
+</body>
+</html>
