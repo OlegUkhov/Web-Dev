@@ -1,0 +1,100 @@
+* {
+    box-sizing : border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "Arial Black", Helvetica, sans-serif;
+}
+body {
+    background: #222d35;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    color: #1db954;
+    padding: 10px;
+}
+.nav-auth {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    color: #1db954;
+}
+.logo {
+    font-weight: bold;
+    font-size: 50px;
+}
+nav ul {
+    position: absolute;
+    top: 25px;
+    left: 220px;
+    list-style: none;
+}
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+h1 {
+    text-align: center;
+}
+form {
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+button {
+    color: gray;
+    border: 1px solid white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.cards {
+    display: flex;
+    flex-direction: row;
+}
+.plan-card {
+    max-width: 350px;
+    margin: 30px;
+    border: 0 solid #1db954;
+    padding: 40px;
+    border-radius: 15px;
+    background: #155e2e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(11, 11, 200 ,0.9);
+
+}
+.plan-card:hover {
+    background: #1db954;
+}
+.plan-card button {
+    margin: 20px;
+    background: none;
+    color: white;
+    border: 2px solid white;
+    box-shadow: 0 2px 8px rgba(11, 11, 11 ,0.9);
+}
+.plan-card button:hover {
+    color: black;
+    border: 2px solid black;
+}

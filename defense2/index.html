@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spotify - Login & plans</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+    <nav>
+        <span class="logo">Spotify</span>
+        <ul>
+            <li><a href="#">Premium</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Download</a></li>
+        </ul>
+        <div class="nav-auth">
+            <a href="#">Sign Up</a>
+            <a href="#">Log In</a>
+        </div>
+
+    </nav>
+    </header>
+<main>
+    <br>
+    <section id="login">
+        <h1>Log in to Spotify</h1>
+        <hr><br>
+        <form>
+            <label>Email or Username<br>
+                <input type="text" placeholder="Username">
+                <input type="email" placeholder="Email" id="email" name="email"><br>
+                <button class="btn-login">Submit</button><br>
+                <a href="#">Forgot your password?</a>
+            </label>
+            <p>Dont have an account? <a href="#" style="text-decoration: underline">Sign up for Spotify</a> </p>
+        </form>
+        <br>
+        <hr>
+    </section>
+    <section id="pricing">
+        <h1>Choose your plan</h1>
+        <p style="text-align: center">Listen without limits. Try 1 month free</p>
+        <div class="cards">
+            <div class="plan-card">
+                <h2>Free plan</h2>
+                <h3>Price : "0$ / month"</h3>
+                <h4>features</h4>
+                <ul>
+                    <li>ad - supported listening</li>
+                    <li>basic audio quality</li>
+                    <li>1 account</li>
+                    <li>no offline mode</li>
+                </ul>
+                <button class="btn-outline">Get Started</button>
+            </div>
+            <div class="plan-card">
+                <h2>Premium Individual</h2>
+                <span class="badge">MOST POPULAR</span>
+                <h3>Price : "9.99/month"</h3>
+                <h4>Features</h4>
+                <ul>
+                    <li>ad - free music</li>
+                    <li>High audio quality</li>
+                    <li>1 account</li>
+                    <li>Offline mode</li>
+                    <li>on-demand playback</li>
+                </ul>
+                <button class="btn-primary">Try Free for 1 month</button>
+            </div>
+            <div class="plan-card">
+                <h2>Premium Duo</h2>
+                <h3>Price : "14.99/month"</h3>
+                <h4>Features</h4>
+                <ul>
+                    <li>All individual features</li>
+                    <li>2 accounts</li>
+                    <li>Duo mix: shared playlist</li>
+                    <li>ad-free podcasts</li>
+                </ul>
+                <button class="btn-outline">Try Free for 1 Month</button>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>
