@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let html = document.querySelector('.elem').innerHTML;
+
+    let user = {};
+
+    alert(user.address ? user.address.street : undefined);
+
+    let user = {}; // user has no address
+
+    alert( user?.address?.street ); // undefined (no error)
+
+    let user = null;
+
+    alert( user?.address ); // undefined
+    alert( user?.address.street ); // undefined
+</script>
+</body>
+</html>

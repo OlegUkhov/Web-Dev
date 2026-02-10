@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let us = {
+        name : "Pete",
+    }
+
+    us = null;
+
+    let user = {
+        name: "John"
+    };
+
+    let admin = user;
+
+    user = null;
+
+    function marry(man, woman) {
+        woman.husband = man;
+        man.wife = woman;
+
+        return {
+            father: man,
+            mother: woman
+        }
+    }
+
+    let family = marry({
+        name: "John"
+    }, {
+        name: "Ann"
+    });
+
+    delete family.father;
+    delete family.mother.husband;
+
+
+</script>
+</body>
+</html>
