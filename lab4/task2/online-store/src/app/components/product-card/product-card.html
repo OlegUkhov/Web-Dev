@@ -1,0 +1,29 @@
+<div class="product-card">
+  <img [src]="product.image" [alt]="product.name" class="product-image">
+  <h3>{{product.name}}</h3>
+  <p class="description">{{product.description}}</p>
+
+  <div class="rating">
+    ⭐: {{product.rating}}
+  </div>
+
+  <p class="price">{{product.price}}kzt</p>
+  <div class="actions">
+    <a [href]="product.link" target="_blank" class="btn">
+      Открыть на Kaspi.kz
+    </a>
+    <div class="share-container">
+      <button class="btn btn-share" (click)="toggleShareMenu()">
+        Поделиться
+      </button>
+      <div class="share-menu" *ngIf="showShareMenu">
+        <button class="share-option whatsapp" (click)="shareOnWhatsApp()">
+          WhatsApp
+        </button>
+        <button class="share-option telegram" (click)="shareOnTelegram()">
+          Telegram
+        </button>
+      </div>
+  </div>
+</div>
+</div>
