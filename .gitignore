@@ -1,22 +1,13 @@
 # IDE
-.idea/
-.vscode/
+.idea
 *.iml
 
 # Node
-node_modules/
-npm-debug.log
-yarn-error.log
+node_modules
+.angular
+dist
 
-# Angular
-.angular/
-dist/
-/out-tsc
-/bazel-out
-
-# System
-.DS_Store
-Thumbs.db
-
-# Logs
-*.log
+# Angular build
+**/node_modules
+**/.angular
+**/dist
