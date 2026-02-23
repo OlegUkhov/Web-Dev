@@ -24,7 +24,7 @@ export class ProductCardComponent {
   shareOnTelegram(): void {
     const telegramUrl = `https://t.me/share/url?url=${encodeURIComponent(this.product.link)}&text=${encodeURIComponent(this.product.name)}`;
     window.open(telegramUrl, '_blank');
-    this.showShareMenu = false;  // Закрыть меню после клика
+    this.showShareMenu = false;
   }
 
 }
