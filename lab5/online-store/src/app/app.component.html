@@ -1,0 +1,10 @@
+<div class="categories">
+  @for (c of productService.categories; track c.id) {
+    <button class="category-btn"
+            [class.active]="selectedCategoryId === c.id"
+            (click)="selectCategory(c.id)">{{c.name}}</button>  }
+</div>
+
+@if (selectedCategoryId !== null) {
+  <product-list [products]="selectedProducts"></product-list>
+}
