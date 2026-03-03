@@ -21,4 +21,3 @@ export class AppComponent {
     this.selectedProducts = this.productService.products.filter(product => product.categoryId === categoryId);
   }
 }
-

@@ -1,0 +1,13 @@
+# IDE
+*.iml
+
+# Node
+node_modules
+.angular
+dist
+
+# Angular build
+**/.idea
+**/node_modules
+**/.angular
+**/dist

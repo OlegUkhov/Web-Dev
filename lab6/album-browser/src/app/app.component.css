@@ -1,0 +1,24 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+body { background: #f5f5f5; }
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  background: #cc0000;
+  color: white;
+}
+.brand { font-size: 20px; font-weight: bold; }
+.nav-links { display: flex; gap: 8px; }
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+.nav-links a:hover, .nav-links a.active {
+  background: rgba(255,255,255,0.25);
+}
