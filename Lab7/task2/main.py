@@ -9,28 +9,20 @@ bird2 = Bird("Penguin", 6, 15.0, False)
 
 animals = [dog1, dog2, cat1, cat2, bird1, bird2]
 
-print("=" * 50)
-print("ALL ANIMALS")
-print("=" * 50)
+print("all animals")
 for animal in animals:
     print(animal)
 
-print("\n" + "=" * 50)
-print("POLYMORPHISM — speak()")
-print("=" * 50)
+print("speak()")
 for animal in animals:
     print(animal.speak())
 
-print("\n" + "=" * 50)
-print("COMMON METHODS — eat() and sleep()")
-print("=" * 50)
+print("common methods eat() and sleep()")
 for animal in animals:
     print(animal.eat())
     print(animal.sleep())
 
-print("\n" + "=" * 50)
-print("UNIQUE METHODS")
-print("=" * 50)
+print("unique methods")
 for animal in animals:
     if isinstance(animal, Dog):
         print(animal.fetch())
